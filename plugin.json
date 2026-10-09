@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sop-ap-skills",
+  "version": "1.0.0",
+  "description": "Draft and review Indonesian government SOP AP under Permen PANRB 35/2012 with source citations.",
+  "author": {
+    "name": "rafadlis",
+    "url": "https://github.com/rafadlis"
+  },
+  "homepage": "https://github.com/rafadlis/sop-ap-skills",
+  "repository": "https://github.com/rafadlis/sop-ap-skills",
+  "license": "MIT",
+  "keywords": ["sop", "sop-ap", "indonesia", "permen-panrb", "government"]
+}

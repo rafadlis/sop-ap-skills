@@ -1,0 +1,4 @@
+interface:
+  display_name: "SOP AP author"
+  short_description: "Draft SOP AP using Permen PANRB 35/2012"
+  default_prompt: "Use $sop-ap-author to draft or revise this SOP in Bahasa Indonesia under Permen PANRB 35/2012 and list the facts that need confirmation."
