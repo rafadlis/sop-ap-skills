@@ -1,4 +1,4 @@
 interface:
   display_name: "SOP AP review"
-  short_description: "Review SOP AP against Permen PANRB 35/2012"
-  default_prompt: "Use $sop-ap-review to review this SOP against Permen PANRB 35/2012, cite the source pages, and report gaps without changing the document."
+  short_description: "Review SOP AP clarity, flow and PANRB 35/2012"
+  default_prompt: "Use $sop-ap-review to review this SOP for plain language, clear routes and proportionate steps under Permen PANRB 35/2012, preserve confirmed requirements, accept labeled Waktu estimates, cite source pages, and report targeted corrections without changing documents."

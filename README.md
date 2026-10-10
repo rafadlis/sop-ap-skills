@@ -1,13 +1,15 @@
 # SOP AP skills
 
-Reusable skills for drafting and reviewing Indonesian government SOP AP under Permen PANRB Nomor 35 Tahun 2012. Each skill includes the original regulation and annex, source page citations, and optional SOP Studio guidance.
+Reusable skills for drafting and reviewing Indonesian government SOP AP under Permen PANRB Nomor 35 Tahun 2012. Use familiar Indonesian words, concrete activities and clear routes so applicants, new employees and officers can follow the procedure. Each skill includes the original regulation and annex, source page citations, and optional SOP Studio guidance.
 
 | Skill | Use |
 | --- | --- |
-| `sop-ap-author` | Draft or revise the identity sheet, actor lanes, branching flowchart and mutu baku |
-| `sop-ap-review` | Review an SOP with evidence, source citations and specific corrections |
+| `sop-ap-author` | Draft or simplify the identity sheet, activities, actor lanes, flowchart and mutu baku |
+| `sop-ap-review` | Review clarity, flow and requirements with evidence, source citations and targeted corrections |
 
 The skills work with supplied documents, files or process notes. A SOP Studio connection is needed only when you request reads or edits in that application.
+
+Keep steps proportionate to the task, preserve actual decisions and correction routes, and simplify wording before proposing extra SOPs. Fill draft Waktu with confirmed times or clearly labeled working estimates. The [plain-language guide](skills/sop-ap-author/references/plain-language.md) includes practical wording examples; the review skill checks the same principles.
 
 ## Install across projects
 
@@ -36,11 +38,11 @@ bunx skills add rafadlis/sop-ap-skills --list
 In an agent that supports named skill invocation:
 
 ```text
-Use $sop-ap-author to draft this SOP in Bahasa Indonesia under Permen PANRB 35/2012. List facts that need confirmation.
+Use $sop-ap-author to draft or simplify this SOP in plain Bahasa Indonesia under Permen PANRB 35/2012. Keep the route easy to follow and list facts that need confirmation.
 ```
 
 ```text
-Use $sop-ap-review to review this SOP against Permen PANRB 35/2012. Cite the rule pages and report gaps without changing the document.
+Use $sop-ap-review to review this SOP for clear language and routes under Permen PANRB 35/2012. Cite the rule pages and report targeted corrections without changing the document.
 ```
 
 Other agents may expose skills through their own picker or command syntax. The `SKILL.md` instructions and relative reference files remain portable.
@@ -61,7 +63,7 @@ The repository also contains a portable, skills-only `plugin.json` manifest for 
 
 The bundled PDF is the 63-page official [JDIH BPK copy of Permen PANRB 35/2012](https://peraturan.bpk.go.id/Home/Download/123614/PERMENPAN%20NOMOR%2035%20TAHUN%202012.pdf), retrieved on 2026-10-09. Its SHA-256 is `665a31b3b3773d5a76f703d18c6d7ecad552bc783143db60e93f54bcbdb2baa9`. The [official record](https://peraturan.bpk.go.id/Details/132829/permen-pan-rb-no-35-tahun-2012) gives its legal metadata and status.
 
-Initial validation checked skill frontmatter, local references, UI metadata, PDF hashes and sample drafting/review behavior. A draft or software lint pass does not establish formal institutional approval. The skills preserve unresolved facts and distinguish app behavior from the regulation.
+Validation checked skill frontmatter, local references, UI metadata, PDF hashes and sample drafting/review behavior. A draft or software lint pass does not establish formal institutional approval. The skills preserve unresolved facts and distinguish app behavior from the regulation.
 
 ## License
 
