@@ -4,7 +4,7 @@ This is an application mapping, not additional regulation. It reflects the SOP S
 
 ## Identify the document
 
-Use the SOP Studio connector when the user requests work in the app. Discover its `sop_list`, `sop_get`, `sop_lint`, `sop_plan` and `sop_apply` tools. Names can have a connector prefix. Do not assume a target from a title alone when more than one result matches.
+Use the optional SOP Studio connector when it is available and the user requests work in the app. If it is unavailable, draft from the supplied material and report that app reads and saves are unavailable. Discover its `sop_list`, `sop_get`, `sop_lint`, `sop_plan` and `sop_apply` tools. Names can have a connector prefix. Do not assume a target from a title alone when more than one result matches.
 
 For a file-only or chat-only draft, no connector access is needed. Do not request broader storage permissions or move local SOPs to another storage system merely to use this skill.
 

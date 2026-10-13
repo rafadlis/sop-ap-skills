@@ -1,6 +1,6 @@
 # Reading SOP Studio for a review
 
-Use the connected SOP Studio tools only for a requested review of app documents. The active schema and grants govern access. Do not change permissions, copy private browser storage, write directly to the database or move local data to another system to perform a review.
+Use the optional SOP Studio tools when available and only for a requested review of app documents. If they are unavailable, review supplied material and report that app reads are unavailable. For requested corrections, provide proposed content and report that app saves are unavailable. The active schema and grants govern access. Do not change permissions, copy private browser storage, write directly to the database or move local data to another system to perform a review.
 
 ## Complete and consistent reads
 

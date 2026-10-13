@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "SOP AP",
+      "description": "Draft and review Indonesian government SOP AP under Permen PANRB 35/2012.",
+      "skills": ["sop-ap-author", "sop-ap-review"]
+    }
+  ]
+}

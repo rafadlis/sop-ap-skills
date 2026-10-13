@@ -7,11 +7,15 @@ description: "Draft or simplify Indonesian government SOP AP under Permen PANRB 
 
 Create an Indonesian SOP AP draft grounded in the user's actual procedure and Permen PANRB Nomor 35 Tahun 2012. A saved draft is not an institutional approval.
 
+This skill defaults to plain language, labeled provisional Waktu estimates, concise Keterangan and manageable SOP scopes. Follow the user's explicit drafting choices when they differ, while preserving confirmed requirements and authority. These defaults do not add regulatory requirements.
+
 ## Read the relevant references
 
 - Read [references/rules.md](references/rules.md) for the drafting requirements and exact PDF page references. The original regulation and annex are included at [references/permenpanrb-35-2012.pdf](references/permenpanrb-35-2012.pdf).
 - Read [references/plain-language.md](references/plain-language.md) when writing or simplifying alur prosedur. It covers activity wording, useful detail and examples from SOP Studio.
 - For a request to create or change a SOP in SOP Studio, also read [references/sop-studio.md](references/sop-studio.md). Use its field mapping and the active tool schema.
+
+SOP Studio is an optional integration. If its connector is unavailable, draft from supplied PDFs, JSON or process notes. For a requested app edit, deliver the proposed content and report that app reads and saves are unavailable; do not claim that the document was changed.
 
 ## Establish the procedure
 
@@ -27,7 +31,7 @@ Choose the simplest complete procedure within the requested scope. Simplify word
 
 Reuse an existing related SOP when its scope and output fit. Keep the referring SOP's decision, handoff and continuation, and leave the target's internal activities in the target SOP. Record genuine dependencies in Keterkaitan. For each actual handoff, check the target, triggering condition, sending and receiving roles, required input, expected output, completion evidence and whether the source ends, waits or resumes at a named activity. These are drafting checks, not a requirement to add a row or record for each item. Preserve real rejection and correction routes across the SOPs.
 
-Read [references/linked-sops.md](references/linked-sops.md) when proposing boundaries or drafting an integrated set. It includes a Pendaftaran Wajib Pajak Orang Pribadi example. This preference supports manageable procedures; it is not an additional regulatory requirement or permission to create unrequested app documents.
+Read [references/linked-sops.md](references/linked-sops.md) when proposing boundaries or drafting an integrated set. It includes a Pendaftaran Wajib Pajak Orang Pribadi example. This drafting default supports manageable procedures; it is not an additional regulatory requirement or permission to create unrequested app documents.
 
 ## Write the draft
 
@@ -43,9 +47,9 @@ Make alur prosedur understandable to applicants, new employees and officers with
 - Supply kelengkapan, Waktu with a numeric duration and unit, and a verifiable output for each activity. Preserve confirmed durations and use applicable confirmed standards first. Otherwise use representative observed durations or propose a reasonable initial estimate in Waktu. Mark estimates clearly as "Estimasi awal" and state their normal-case assumptions. Add keterangan only when necessary.
 - Use terminator, process, decision, arrow and off-page connector according to their meanings. Put activity descriptions in the activity column, not inside the symbols. A separate document symbol is not part of this SOP AP format.
 
-Prefer a filled, revisable Waktu over an empty field merely because no measurement or official standard is available. Base estimates on the activity, actor, inputs, workload and expected system response; use rounded values rather than false precision. Identify estimated rows in a brief note or an associated estimate table that stays with the draft. Keep a time unresolved only when a meaningful estimate is not possible, and never use zero as a placeholder. After actual cases or a trial, compare recorded times with the estimates and revise them with the observed basis. Distinguish active work, waiting and repeated corrections. Do not present estimates as approved standards or silently replace established institutional or regulatory limits. This is the user's drafting preference, not an additional regulatory requirement.
+Prefer a filled, revisable Waktu over an empty field merely because no measurement or official standard is available. Base estimates on the activity, actor, inputs, workload and expected system response; use rounded values rather than false precision. Identify estimated rows in a brief note or an associated estimate table that stays with the draft. Keep a time unresolved only when a meaningful estimate is not possible, and never use zero as a placeholder. After actual cases or a trial, compare recorded times with the estimates and revise them with the observed basis. Distinguish active work, waiting and repeated corrections. Do not present estimates as approved standards or silently replace established institutional or regulatory limits. This is the skill's drafting default, not an additional regulatory requirement.
 
-Put the work in Kegiatan. When `Ket.` / Keterangan describes an action, decision, handoff or correction, incorporate it into the appropriate activity or create a distinct step when it has its own actor, output or place in the flow. Keep small qualifiers with the existing activity and avoid unnecessary splits. Reserve Keterangan for brief, essential context; leave it empty when unnecessary and avoid repeating activities, mutu baku or branch labels. Apply this as a drafting preference, not an additional regulatory requirement.
+Put the work in Kegiatan. When `Ket.` / Keterangan describes an action, decision, handoff or correction, incorporate it into the appropriate activity or create a distinct step when it has its own actor, output or place in the flow. Keep small qualifiers with the existing activity and avoid unnecessary splits. Reserve Keterangan for brief, essential context; leave it empty when unnecessary and avoid repeating activities, mutu baku or branch labels. Apply this as the skill's drafting default, not an additional regulatory requirement.
 
 Trace the normal route and each exception route supported by the procedure or evidence. Do not invent approval, logging, retry or referral work for hypothetical failures. Check that outputs support the next activity's inputs and that returned work has a stated correction route. Do not replace a real return loop with a different process to satisfy a tool limitation.
 

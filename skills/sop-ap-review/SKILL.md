@@ -7,7 +7,11 @@ description: "Review Indonesian government SOP AP for plain language, clear rout
 
 Assess the supplied SOP against Permen PANRB Nomor 35 Tahun 2012 and distinguish what the available evidence proves from what remains unknown. A review request authorizes reading and reporting; it does not authorize changing the SOP or submitting it for approval.
 
+This skill defaults to plain language, labeled provisional Waktu estimates, concise Keterangan and manageable SOP scopes. Follow the user's explicit drafting choices when they differ, while preserving confirmed requirements and authority. Treat recommendations based on these defaults as improvements, not additional regulatory requirements.
+
 Read [references/checklist.md](references/checklist.md) for the source-backed checks. The original regulation and annex are included at [references/permenpanrb-35-2012.pdf](references/permenpanrb-35-2012.pdf). For SOP Studio reads, also read [references/sop-studio-review.md](references/sop-studio-review.md).
+
+SOP Studio is an optional integration. If its connector is unavailable, review supplied PDFs, JSON or process notes, report that app reads are unavailable and limit conclusions to that material. If corrections were also requested, provide proposed content and report that app saves are unavailable; do not claim that the document was changed.
 
 ## Gather evidence
 
@@ -29,7 +33,7 @@ Check whether `Ket.`/`Keterangan` hides procedural work that belongs in an activ
 
 Walk every decision outcome and every start-to-finish route. Check normal completion, rejection and correction routes for reachability and the required output. A return arrow is allowed when it models a real decision. Report an endless loop, unexplained dead end or unlabeled alternative with its actual affected step IDs or PDF rows.
 
-Check whether distinct services or extensive exception handling obscure the SOP's main output. Simplify wording and redundant activities before recommending more SOPs. Recommend several directly related SOPs when evidence establishes independently useful services with distinct triggers, responsibilities and completion outputs. Check reader effort across the whole set. Keep ordinary completeness checks and correction loops with their owning SOP. Assess actual ambiguity, duplicated work and crossing routes rather than imposing a maximum activity, branch or page count. Do not recommend speculative approval, logging or failure-handling work. Treat manageable scopes as the user's drafting preference, and distinguish it from a specific regulatory gap.
+Check whether distinct services or extensive exception handling obscure the SOP's main output. Simplify wording and redundant activities before recommending more SOPs. Recommend several directly related SOPs when evidence establishes independently useful services with distinct triggers, responsibilities and completion outputs. Check reader effort across the whole set. Keep ordinary completeness checks and correction loops with their owning SOP. Assess actual ambiguity, duplicated work and crossing routes rather than imposing a maximum activity, branch or page count. Do not recommend speculative approval, logging or failure-handling work. Treat manageable scopes as the skill's drafting default, and distinguish it from a specific regulatory gap.
 
 For linked SOPs, follow the checklist's integration checks. Match each handoff's input, receiving role, result and evidence to its target and stated continuation. Check normal and unsuccessful routes across the set, including return destinations. Identify unavailable targets and limit the conclusion to the evidence read. A title in Keterkaitan or a valid app link alone does not prove a complete handoff. Recommend concrete boundaries and an integration table when useful; a review alone does not authorize splitting or creating app documents.
 
@@ -45,7 +49,7 @@ Write in the user's language; preserve Indonesian field names. Lead with the con
 | --- | --- |
 | Location | PDF page and row, or document field and stable step ID |
 | Evidence | Observed content or explicit absence from the material inspected |
-| Requirement | Annex chapter, clause and one-based PDF page, or the user's drafting preference when the finding is an improvement |
+| Requirement | Annex chapter, clause and one-based PDF page, or an applicable skill drafting default or explicit user choice when the finding is an improvement |
 | Assessment | Meets requirement, gap, insufficient evidence, or not assessed |
 | Correction | A specific content correction or the evidence needed |
 

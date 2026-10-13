@@ -1,6 +1,6 @@
 # Manageable, integrated SOPs
 
-Use this guide when one flowchart combines distinct services or extensive exception handling. The user's preference is to keep each SOP understandable and connect related procedures explicitly. The regulation's macro/micro and final/partial distinctions, clarity and alignment principles, and Keterkaitan element support assessing these boundaries. See [rules.md](rules.md) for their source pages. They do not prescribe a maximum number of rows or require a separate SOP for each exception.
+Use this guide when one flowchart combines distinct services or extensive exception handling. This skill defaults to keeping each SOP understandable and connecting related procedures explicitly, subject to the user's explicit drafting choices. The regulation's macro/micro and final/partial distinctions, clarity and alignment principles, and Keterkaitan element support assessing these boundaries. See [rules.md](rules.md) for their source pages. They do not prescribe a maximum number of rows or require a separate SOP for each exception.
 
 ## Choose the boundaries
 
