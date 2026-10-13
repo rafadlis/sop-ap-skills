@@ -1,6 +1,6 @@
 ---
 name: sop-ap-author
-description: "Draft or simplify Indonesian government SOP AP under Permen PANRB 35/2012 with plain-language activities, clear routes and mutu baku. Use for SOP content or requested SOP Studio edits, not general application development."
+description: "Create, edit or simplify Indonesian government SOP AP, including saving complete drafts through SOP Studio MCP, with plain-language activities, clear routes and mutu baku under Permen PANRB 35/2012. Use for SOP content, not application development."
 ---
 
 # Draft SOP AP
@@ -13,7 +13,7 @@ This skill defaults to plain language, labeled provisional Waktu estimates, conc
 
 - Read [references/rules.md](references/rules.md) for the drafting requirements and exact PDF page references. The original regulation and annex are included at [references/permenpanrb-35-2012.pdf](references/permenpanrb-35-2012.pdf).
 - Read [references/plain-language.md](references/plain-language.md) when writing or simplifying alur prosedur. It covers activity wording, useful detail and examples from SOP Studio.
-- For a request to create or change a SOP in SOP Studio, also read [references/sop-studio.md](references/sop-studio.md). Use its field mapping and the active tool schema.
+- For a request to create or change a SOP in SOP Studio, also read [references/sop-studio.md](references/sop-studio.md). Discover `sop_guide` when available to obtain the connected version's input schemas; read [references/mcp-examples.md](references/mcp-examples.md) when constructing a creation or branch payload. The connected schema determines supported fields.
 
 SOP Studio is an optional integration. If its connector is unavailable, draft from supplied PDFs, JSON or process notes. For a requested app edit, deliver the proposed content and report that app reads and saves are unavailable; do not claim that the document was changed.
 
@@ -63,7 +63,7 @@ For a complete SOP draft, return the identity sheet, a matrix with No., Kegiatan
 
 For multiple integrated SOPs, also return a short integration table showing their boundaries and handoffs. Walk the normal route and relevant exceptions across the set, including any return to the source SOP. Identify proposed targets separately from existing verified SOPs and name any missing dependency or unsupported continuation.
 
-For an authorized SOP Studio edit, read the current document and all its step pages, build a typed preview, inspect its changes and lint, and apply only a valid preview within the user's scope. A preview is not a saved change. A tool error is not success. Existing authorization for the edit is sufficient; do not add an approval round for routine reversible edits.
+For an authorized SOP Studio creation, prefer one complete preview containing the identity, sections, steps and explicit connections when the connected schema supports them. For an edit, read the current document and all its step pages and preserve stable IDs. Inspect the preview's actual candidate, changes and lint, apply only with `canApply: true`, then read and lint the saved result. A preview is not a saved change. If the connected version requires staged creation, finish the sections and routes before calling the SOP complete. Check the candidate SOP ID before retrying an apply whose outcome is unknown so a saved draft is not duplicated. Existing authorization for the edit is sufficient; do not add an approval round for routine reversible edits.
 
 For a complete institutional SOP manual, include or identify the cover, adoption decision, table of contents and usage explanation. Do not invent the adoption decision, signature or stamp. If these are outside the editor's fields, provide them separately or identify the gap.
 

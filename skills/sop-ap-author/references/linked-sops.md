@@ -23,7 +23,7 @@ Use a short table with these fields when an actual handoff needs explanation. Th
 
 Match the source output to the target input and the target result to any resuming activity's requirements. Keep the routing decision and actual transfer in Kegiatan and the flow. Keterkaitan records the relationship; it does not replace procedural work. Fill Waktu with confirmed timings or clearly labeled working estimates, including waiting assumptions, without double-counting a linked procedure's duration. Revise estimates from actual cases across the set. Trace a case across the set to find missing work, incompatible data, circular referrals and lost correction routes.
 
-For SOP Studio, follow [sop-studio.md](sop-studio.md). A linked off-page node transfers to another SOP and has no local outgoing path. It does not implement an automatic return. Document a required return with named activities and conditions, and report any route the current tool cannot encode rather than changing the real procedure.
+For SOP Studio, follow [sop-studio.md](sop-studio.md). A linked off-page node refers to another SOP and can have one forward local continuation in the current model. It does not execute the target or implement an automatic return. Document the handoff, expected result and completion condition at named activities. Inspect the connected version and report any unsupported route rather than changing the real procedure.
 
 ## Example: Pendaftaran Wajib Pajak Orang Pribadi
 

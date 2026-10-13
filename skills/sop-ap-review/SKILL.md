@@ -15,7 +15,7 @@ SOP Studio is an optional integration. If its connector is unavailable, review s
 
 ## Gather evidence
 
-Establish the document and revision, whether the material is a draft, procedure sheet or complete manual, and the requested review scope. Use supplied PDF pages, JSON, process notes, official regulations and approval evidence. For an app document, read every step page at a consistent revision and run `sop_lint` when available.
+Establish the document and revision, whether the material is a draft, procedure sheet or complete manual, and the requested review scope. Use supplied PDF pages, JSON, process notes, official regulations and approval evidence. For an app document, use `sop_guide` with the workflow topic when available to inspect current flow behavior, read every step page at a consistent revision and run `sop_lint` at that revision. Inspect effective connections rather than assuming adjacent rows are connected.
 
 For a PDF or image review, inspect the actual tables, symbol shapes, arrows, labels and page continuations. Text extraction can miss these. For text or JSON alone, assess content and logical connections, and mark visual format as not assessed. Logo and signature absence from an API response does not prove their absence from the document.
 
