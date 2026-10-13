@@ -13,19 +13,32 @@ Keep steps proportionate to the task, preserve actual decisions and correction r
 
 ## Install across projects
 
-Use the [Skills CLI](https://skills.sh/docs/cli) to install both skills globally and select your agent applications:
+Install both skills globally for Codex with the [Skills CLI](https://skills.sh/docs/cli):
 
 ```sh
-bunx skills add rafadlis/sop-ap-skills --global --skill sop-ap-author sop-ap-review
+bunx skills add rafadlis/sop-ap-skills --global --agent codex --skill sop-ap-author sop-ap-review --yes
 ```
 
-Select specific agents when needed:
+The explicit `--agent codex` selects Codex instead of installing to every detected
+application. The skills are available across projects in `~/.agents/skills`.
+For other agents that support global installation, choose them explicitly:
 
 ```sh
-bunx skills add rafadlis/sop-ap-skills --global --skill sop-ap-author sop-ap-review --agent codex claude-code cursor
+bunx skills add rafadlis/sop-ap-skills --global --agent codex claude-code cursor --skill sop-ap-author sop-ap-review --yes
 ```
 
-If Bun is unavailable, replace `bunx` with `npx`. Omit `--global` to install in the current project. The CLI controls the supported agents and installation locations; consult its current help for other applications.
+PromptScript supports project installation only. Do not use `--all` or
+`--agent '*'` for a global install: these choices include targets without global
+support. A PromptScript failure does not undo successful Codex skill copies.
+To install for PromptScript, run this from the intended project folder:
+
+```sh
+bunx skills add rafadlis/sop-ap-skills --agent promptscript --skill sop-ap-author sop-ap-review --yes
+```
+
+If Bun is unavailable, replace `bunx` with `npx`. Omit `--global` to install in the
+current project. See the [supported-agent table](https://github.com/vercel-labs/skills#supported-agents)
+for each application's global support and installation locations.
 
 List the package without installing:
 
